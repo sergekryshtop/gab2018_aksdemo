@@ -41,14 +41,16 @@ echo $LOGIN_SERVER
 
 1. Login to registry  
 
-Replace <ACR_SECRET> with secret key from portal, for example jPmD8Uhd0mmbL7Ogpv/dbwYwr9W6Nqpl
-
-az acr create -n <ACR_NAME> -g gab2018 --sku Basic
+az acr create -n <ACR_NAME> -g gab2018 --sku Basic  
+  
 LOGIN_SERVER=$(az acr list -g gab2018 --query "[].{acrLoginServer:loginServer}" --output tsv)
 echo $LOGIN_SERVER  
   
-echo "<ACR_SECRET>"| docker login -u gab18lab  --password-stdin $LOGIN_SERVER
-
+ACR_SECRET=$(az acr credential show -n <ACR_NAME> --query "passwords[0].value")  
+  
+echo $ACR_SECRET  
+  
+echo "$ACR_SECRET"| docker login -u gab18lab  --password-stdin $LOGIN_SERVER
 
 
 2. Tag and Push image 

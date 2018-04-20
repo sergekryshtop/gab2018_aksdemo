@@ -18,13 +18,24 @@ Follow following instructions to provision and setup Linux VM in Azure
 [Setup Linux VM in Azure](./SetupLinuxVM.md)
 
 
-## Provisioning AKS Cluster
+## [Provisioning AKS Cluster](./CreateAKS.md)
 
 
-
-
-## Deploying sample application
+## [Deploying sample application](./DeployApp.md)
 
 
 
 ## Scaling AKS Cluster
+
+* Add another node to the cluster  
+
+az aks scale -n gab18aks -g gab18aks --node-count 2
+
+* Open K8s Dashboard  
+
+az aks browse -n gab18aks -g gab18aks
+
+## Other 
+
+* [How to copy SSH keys and K8s config from Azure Linux VM](./CopyFromLinuxVM.md)
+* Additional reading: (https://azure.microsoft.com/en-ca/solutions/architecture/container-cicd-using-jenkins-and-kubernetes-on-azure-container-service/)
