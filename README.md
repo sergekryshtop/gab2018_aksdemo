@@ -17,15 +17,17 @@ For Windows: (https://aka.ms/installazurecliwindows)
 Follow following instructions to provision and setup Linux VM in Azure
 [Setup Linux VM in Azure](./SetupLinuxVM.md)
 
+## Demo
 
-## [Provisioning AKS Cluster](./CreateAKS.md)
+### Provisioning AKS Cluster
+  
+[Create Managed Kubernetes Cluster](./CreateAKS.md)
 
+### Deploying sample application
+  
+[Deploy app to cluster](./DeployApp.md)
 
-## [Deploying sample application](./DeployApp.md)
-
-
-
-## Scaling AKS Cluster
+### Scaling AKS Cluster
 
 * Add another node to the cluster  
 
