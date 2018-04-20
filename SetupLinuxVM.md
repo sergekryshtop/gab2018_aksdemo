@@ -8,15 +8,15 @@ az group create --name gab2018 --location "westeurope"
 
 2. Create Linux VM with DNS name
 
-Replace <vm_name> with your unique name, for example: gablabskr
-Username: gab18usr
-Password: 'pa$$w0rd!.12345'
-
+Replace <vm_name> with your unique name, for example: gablabskr  
+Username: gab18usr  
+Password: 'pa$$w0rd!.12345'  
+  
 az vm create --name <vm_name> --resource-group gab2018 --admin-username gab18usr --admin-password 'pa$$w0rd!.12345' --generate-ssh-keys --storage-sku Standard_LRS --image UbuntuLTS --size Standard_D1_v2 --public-ip-address-dns-name <vm_name>
 
 
 3. SSH to VM: gab18usr@<vm_name>.westeurope.cloudapp.azure.com
-For Windows use Putty.
+For Windows use Putty.  
 
 
 
