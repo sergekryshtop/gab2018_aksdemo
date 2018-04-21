@@ -41,3 +41,5 @@ az aks browse -n gab18aks -g gab18aks
 
 * [How to copy SSH keys and K8s config from Azure Linux VM](./CopyFromLinuxVM.md)
 * Additional reading: (https://azure.microsoft.com/en-ca/solutions/architecture/container-cicd-using-jenkins-and-kubernetes-on-azure-container-service/)
+
+* [Create Azure Subscription](./CreatingAzureSubscription.md)
